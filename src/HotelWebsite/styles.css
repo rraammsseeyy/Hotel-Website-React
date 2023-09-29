@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:  sans-serif, 'Arial Narrow', Arial;
+}
+/* Nav Bar */
+.logo{
+    font-size: 3rem;
+    text-decoration: none;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 3rem;
+}
+.nav-list{
+    display: flex;
+    gap: 10rem ;
+    font-size: 2rem;
+}
+.nav-bar button{
+    padding: 1.5rem 3rem;
+    background-color: rgb(239, 239, 239);
+    border-radius: 1rem;
+}
+/* End Nav Bar */
+
+/* Hero Section */
+.hero-section{
+    /* background-image: url("img/img-3.jpg"); */
+    background-size:cover;
+    height: 80rem;
+}
+.hero-img-container{
+    position: absolute;
+    z-index: -1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.hero-text-box{
+    padding: 45rem 0 0 4rem;
+    /* position: relative; */
+}
+.hero-text-box h1{
+    font-size: 5rem;
+    color: white;
+}
+.hero-text-box p{
+    font-size: 2rem;
+    color: white;
+    margin: 2.5rem 0 0 0;
+    line-height: 2;
+}
+.hero-img-container img{
+    width: 100%;
+}
+/* End Hero Section */
+
+
+/* About US Section */
+.about-box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 2rem 0;
+    position: relative;
+    padding: 3rem 0 0 0;
+    background-color: white;
+}
+.about-text-box{
+    grid-column: span 3;
+    padding: 0 2rem 0 0;
+    padding: 5rem;
+    background-color: rgb(239, 239, 239);
+}
+.about-box img{
+    width: 100%;
+    height: 100%;
+    grid-column: span 2;
+    /* border-radius: 1rem; */
+}
+.about-text-box h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.about-text-box p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.about-text-box button{
+    padding: 1.5rem 3rem;
+    background-color: rgb(239, 239, 239);
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+/* End About US Section*/
+
+/* Explore Our Room Section */
+.explore-h1{
+    margin: 3rem 0;
+    font-size: 3rem;
+    margin-left: 55rem;
+}
+.explore-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.explore-box img:nth-child(1){
+    grid-row: 1 / 3;
+}
+.explore-box img{
+    width: 100%;
+    height: 100%;
+}
+.explore-img-div{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.explore-img-div img{
+   width: 50rem;
+}
+/* End Explore Our Room Section */
+
+/* Interior Room Section */
+.interior-room-section-box{
+    margin: 2.5rem 0;
+    background-color: rgb(239, 239, 239);
+}
+.interior-room-img-box{
+    position: relative;
+}
+.interior-room-img-box img {
+    width: 100%;
+    
+}
+.interior-room-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+.interior-room-text-box{
+    position: absolute;
+    top: 0;
+    margin: 10rem 0 0 70rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.interior-room-text-box p{
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+}
+.interior-room-section-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.interior-room-img-box{
+    grid-column: span 2;
+}
+.interior-room-write-up-box{
+    margin: 10rem 5rem;
+    font-size: 2rem;
+}
+.interior-room-write-up-box p{
+    margin: 1rem 0;
+}
+.interior-room-write-up-box button{
+    padding: 1.5rem 3rem;
+    background-color: rgb(239, 239, 239);
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+/* End Interior Room Section */
+
+/* Exterior Section */
+.exterior-box{
+    margin: 3rem 0;
+    background-color: rgb(239, 239, 239);
+}
+.exterior-write-up-box{
+    margin: 10rem 5rem;
+    font-size: 2rem;
+}
+.exterior-write-up-box p{
+    margin: 1rem 0;
+}
+.exterior-write-up-box button{
+    padding: 1.5rem 3rem;
+    background-color: rgb(239, 239, 239);
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+.exterior-img-box{
+    position: relative;
+}
+.exterior-img-box img {
+    width: 100%;
+}
+.exterior-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+.exterior-text-box{
+    position: absolute;
+    top: 0;
+    margin: 10rem 0 0 8rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.exterior-text-box p{
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+}
+.exterior-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.exterior-img-box{
+    grid-column: span 2;
+}
+/* End Exterior Section */
